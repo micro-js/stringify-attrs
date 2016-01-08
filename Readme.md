@@ -17,15 +17,16 @@ Turn an attributes object into a string
 ```js
 var stringifyAttrs = require('@f/stringify-attrs')
 
+stringifyAttrs({href: 'http://www.google.com', class: 'link'}) === 'href="http://www.google.com" class="link"'
 ```
 
 ## API
 
-### stringifyAttrs(arg)
+### stringifyAttrs(attrs)
 
-- `arg` -
+- `attrs` - An object of key/value pairs representing attributes
 
-**Returns:**
+**Returns:** A string containing the attributes in `key=value` style. Returns empty string if falsy value passed.
 
 ## License
 
