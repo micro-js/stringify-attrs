@@ -17,7 +17,7 @@ Turn an attributes object into a string
 ```js
 var stringifyAttrs = require('@f/stringify-attrs')
 
-stringifyAttrs({href: 'http://www.google.com', class: 'link'}) === 'href="http://www.google.com" class="link"'
+stringifyAttrs({href: 'http://www.google.com', class: 'link'}) === ' href="http://www.google.com" class="link"'
 ```
 
 ## API
@@ -27,6 +27,10 @@ stringifyAttrs({href: 'http://www.google.com', class: 'link'}) === 'href="http:/
 - `attrs` - An object of key/value pairs representing attributes
 
 **Returns:** A string containing the attributes in `key=value` style. Returns empty string if falsy value passed.
+
+## Prepended space
+
+The returned string starts with a prepended space (e.g. `' class="link"'`). This makes the code short, simpler, and faster, and also comports better with the most common use-case, which is rendering a DOM element as a string (if you don't have the prepended space, you have to again awkwardly check whether attrs is empty).
 
 ## License
 
