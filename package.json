@@ -9,7 +9,8 @@
     "postversion": "git push && git push --tags && npm publish --access=public"
   },
   "dependencies": {
-    "@f/is-valid-attr": "^1.0.0"
+    "@f/is-valid-attr": "^1.0.0",
+    "@f/to-inline-style": "^0.1.3"
   },
   "devDependencies": {
     "tape": "^4.2.2"
