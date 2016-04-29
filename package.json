@@ -2,7 +2,7 @@
   "name": "@f/stringify-attrs",
   "description": "Turn an attributes object into a string",
   "repository": "git://github.com/micro-js/stringify-attrs.git",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
