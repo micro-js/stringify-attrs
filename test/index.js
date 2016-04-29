@@ -14,6 +14,7 @@ test('should work', function (t) {
   t.equal(stringifyAttrs({style: {marginBottom: 10}}), ' style="margin-bottom:10px;"')
 
   t.equal(stringifyAttrs(), '')
+  t.equals(stringifyAttrs({autofocus: true, indeterminate: false}), ' autofocus')
 
   t.end()
 })
