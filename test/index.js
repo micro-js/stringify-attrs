@@ -18,3 +18,8 @@ test('should work', function (t) {
 
   t.end()
 })
+
+test('should skip', function (t) {
+  t.equal(stringifyAttrs({a: 'test', innerHTML: 'asdf'}, {innerHTML: true}), ' a="test"')
+  t.end()
+})

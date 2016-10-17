@@ -22,9 +22,10 @@ stringifyAttrs({href: 'http://www.google.com', class: 'link'}) === ' href="http:
 
 ## API
 
-### stringifyAttrs(attrs)
+### stringifyAttrs(attrs, skip)
 
 - `attrs` - An object of key/value pairs representing attributes
+- `skip` - Optional. Map of attribute names to skip. E.g. `{innerHTML: true}`. This is useful if there are certain attribute names that don't make sense when rendered as strings.
 
 **Returns:** A string containing the attributes in `key=value` style. Returns empty string if falsy value passed.
 
